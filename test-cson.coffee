@@ -1,12 +1,8 @@
 {o:o,a:a,p:p}=require "./CSON"
 
-console.log this, this.length
-value = o =>
-	console.log this, "value", this.length
-	p "store", o =>
-		console.log this, "store", this.length
-		p "book", a =>
-			console.log this, "book", this.length
+value = o ->
+	p "store", o ->
+		p "book", a ->
 			p o ->
 				p "category", "reference"
 				p "author", "Nigel Rees"
