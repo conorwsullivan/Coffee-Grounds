@@ -75,10 +75,15 @@ DESCRIPTION
 	
 	propertyName is any number or string.  value is any javascript value, such as the result of o or a.
 	
-	If propertyName is not specified, and the current context is an array, it pushes that value onto the array.  If the current context is not an array, an error is thrown.
+	If propertyName is not specified, and the current context is an array, it pushes that value onto the array.  
+	If the current context is not an array, an error is thrown.
 	
 ---
-	o builds an object.  It then calls the function specified as the first parameter.  This can be any Javascript function, but usually it will just be a series of calls to p, each p adding a property.  Every p must have a propertyName specified.
+	o builds an object.  It then calls the function specified as the first parameter.  
+	This can be any Javascript function, but usually it will just be a series of calls to p, each p adding a property.  
+	Every p must have a propertyName specified.
 	
 ---
-	a builds an array.  It then calls the function specified as the first parameter.  This can be any Javascript function, but usually it will just be a series of calls to p, each p pushing a value.  Generally, each p will not a propertyName specified, but you can specify if you like.
+	a builds an array.  It then calls the function specified as the first parameter.  
+	This can be any Javascript function, but usually it will just be a series of calls to p, each p pushing a value.  
+	Generally, each p will not a propertyName specified, but you can specify if you like.
